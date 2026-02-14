@@ -385,14 +385,13 @@ function renderTimeline(lang) {
 
     // Trigger animation for new items
     if (window.ScrollTrigger) {
-        gsap.utils.toArray('.timeline-item').forEach((item, i) => {
+        gsap.utils.toArray('.timeline-item').forEach((item) => {
             gsap.fromTo(item,
                 { opacity: 0, x: -20 },
                 {
                     opacity: 1,
                     x: 0,
                     duration: 0.5,
-                    delay: i * 0.1,
                     scrollTrigger: {
                         trigger: item,
                         start: "top 85%",

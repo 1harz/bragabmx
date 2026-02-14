@@ -681,13 +681,61 @@ footer {
     font-size: 3rem;
   }
 
-  .resume-grid {
-    grid-template-columns: 1fr;
-    padding: 2rem;
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  .section-title {
-    font-size: 2.5rem;
+  .resume-section {
+    padding: 2rem 1rem;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .resume-col h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .resume-col p {
+    font-size: 0.9rem;
+  }
+
+  /* Timeline Mobile Tweaks */
+  .timeline-container {
+    padding-left: 20px;
+  }
+
+  .timeline-container::before {
+    left: 4px;
+  }
+
+  .timeline-year {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .timeline-year::before {
+    left: -24px;
+    width: 10px;
+    height: 10px;
+    border-width: 2px;
+    top: 50%;
+    margin-top: -5px;
+  }
+
+  .timeline-item {
+    padding: 0.6rem 0.8rem;
+    margin-left: 0;
+    font-size: 0.85rem;
+  }
+
+  .timeline-item h4 {
+    font-size: 0.9rem;
   }
 }
 
